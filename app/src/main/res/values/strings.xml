@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Data Binding Demo</string>
+    <string name="sayHi">Hi %s!!</string>
+    <string name="noName">Can I have you name?</string>
+    <string name="greeting">Hi %1$s\nToday is %2$tD</string>
+    <string name="now">It is %1$tc.</string>
+
+    <string-array name="weathers">
+        <item>Sunny</item>
+        <item>Rain</item>
+        <item>Cool</item>
+        <item>Cozy</item>
+        <item>Hot</item>
+    </string-array>
+
+    <string-array name="demos">
+        <item>One Time</item>
+        <item>One Way</item>
+        <item>One Way With Model</item>
+        <item>Two Way</item>
+        <item>Event Binding</item>
+        <item>Image Binding</item>
+        <item>Animation Binding</item>
+        <item>View Model Style Binding</item>
+    </string-array>
+    <string-array name="activities">
+        <item>com.swarmnyc.databindingdemo.demo1.OneTimeBindingActivity</item>
+        <item>com.swarmnyc.databindingdemo.demo1.OneWayBindingActivity</item>
+        <item>com.swarmnyc.databindingdemo.demo1.OneWayBindingWithModelActivity</item>
+        <item>com.swarmnyc.databindingdemo.demo1.TwoWayBindingActivity</item>
+        <item>com.swarmnyc.databindingdemo.demo2.EventActivity</item>
+        <item>com.swarmnyc.databindingdemo.demo2.ImageActivity</item>
+        <item>com.swarmnyc.databindingdemo.demo2.AnimationActivity</item>
+        <item>com.swarmnyc.databindingdemo.demo3.ViewModelActivity</item>
+    </string-array>
+</resources>

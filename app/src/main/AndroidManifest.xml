@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swarmnyc.databindingdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".demo1.OneTimeBindingActivity"
+            android:label="One Time Binding" />
+        <activity
+            android:name=".demo1.OneWayBindingActivity"
+            android:label="One Way Binding" />
+        <activity
+            android:name=".demo1.OneWayBindingWithModelActivity"
+            android:label="One Way Binding With Model" />
+        <activity
+            android:name=".demo1.TwoWayBindingActivity"
+            android:label="Two Way Binding" />
+        <activity
+            android:name=".demo2.EventActivity"
+            android:label="Event Binding" />
+        <activity
+            android:name=".demo2.ImageActivity"
+            android:label="Image Binding" />
+        <activity android:name=".demo3.ViewModelActivity"
+            android:label="View Model Binding"/>
+        <activity android:name=".demo2.AnimationActivity"
+            android:label="Animation Binding"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/tools">
+
+    <data class="TwoWayBinder">
+
+        <variable
+            name="username"
+            type="com.swarmnyc.databindingdemo.util.ObservableString" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30sp"
+                binding:text='@{username.isEmpty() ? @string/noName : @string/sayHi(username.get()), default="You name"}' />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Place input your name"
+                android:textSize="30sp"
+                binding:text='@{username}' />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Toast me"
+                binding:toastMe="@{username}" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

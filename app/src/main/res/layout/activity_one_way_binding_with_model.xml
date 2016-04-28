@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/tools">
+    <data class="OneWayModelBinder">
+        <variable
+            name="model"
+            type="com.swarmnyc.databindingdemo.demo1.OneWayBindingWithModelActivity.Model" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            binding:text='@{model.time,default="Time"}'
+            binding:textFormat='@{"%1$tT\n%1$tB %1$td %1$ty %1$tA"}'
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_below="@+id/now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text='@{model.weather,default="Weather"}'
+            android:textSize="30sp" />
+    </RelativeLayout>
+</layout>
+
